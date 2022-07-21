@@ -1,18 +1,18 @@
 /* Seleciona a tag body */
 body {
-    margin: 0; /* Remove o espaço externo/margem (4 lados) */
-    padding: 20px; /* Define o espaço interno (4 lados) com 20px */
+    margin: 0; /* Remove a margem (4 lados) */
+    padding: 20px; /* Define o padding (4 lados) com 20px */
 }
 
-/* Seleciona a tag div, que esta contida em uma tag header */
+/* Seleciona a tag div, que esta contida na tag header */
 header div {
     background-color: #FFFFD9; /* Define a cor de fundo */
-    padding: 30px; /* Define o espaço interno (4 lados) com 30px */
+    padding: 30px; /* Define o padding (4 lados) com 30px */
 }
 
-/* Seleciona a tag img, que esta contida em uma tag div, que por sua vez está contida em uma tag header */
+/* Seleciona a tag img, que esta contida em uma tag div, que por sua vez está contida na tag header */
 header div img {
-    /* Combinação das propriedades abaixo, centraliza a imagem */
+    /* A combinação das propriedades abaixo, centraliza a imagem */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -21,34 +21,34 @@ header div img {
 /* Seleciona a tag nav */
 nav {
     background-color: #302A2D; /* Define a cor de fundo */
-    padding: 20px; /* Define o espaço interno (4 lados) com 20px */
+    padding: 20px; /* Define o padding (4 lados) com 20px */
 }
 
 /* Seleciona a tag ul, que esta contida em uma tag nav */
 nav ul {
-    list-style-type: none; /* Remove os bullets de uma ul */
+    list-style-type: none; /* Remove estilo de lista default (bullets) de uma ul */
     margin-bottom: 0; /* Remove a margem inferior */
     margin-top: 0; /* Remove a margem superior */
     padding-left: 0; /* Remove o espaço interno esquerdo */
     text-align: center; /* Alinha o texto no centro */
 }
 
-/* Seleciona (todas) as li's, que estão contidas em uma ul, que por sua vez está contida em uma nav */
+/* Seleciona (todas) as tags li, que estão contidas em uma ul, que por sua vez está contida em uma nav */
 nav ul li {
     display: inline; /* Coloca as li's lado-a-lado */
-    /* Define os espaços internos esquerdo e direito com 10px */
+    /* Define os padding's esquerdo e direito com 10px */
     padding-left: 10px; 
     padding-right: 10px;
 }
 
-/* Seleciona (todas) as a's, que estão contidas em (todas) li's, que estão contidas em uma ul, que por sua vez está contida em uma nav */
+/* Seleciona (todas) as tags a, que estão contidas em li's, que estão contidas em uma ul, que por sua vez está contida em uma nav */
 nav ul li a {
     color: #FFF; /* Define a cor da fonte */
     text-decoration: none; /* Remove o sublinhado da âncora */
 }
 
-/* Seleciona (todas) as a's, que estão contidas em (todas) li's, que estão contidas em uma ul, que por sua vez está contida em uma nav 
-A pseudo-classe :hover indica que a seleção se dará no movimento de hover, isto é, quando o cursor do mouse passar sobre a tag.
+/* Seleciona (todas) as tags a, que estão contidas em li's, que estão contidas em uma ul, que por sua vez está contida em uma nav 
+A pseudo-classe :hover indica que a seleção se dará no hover, isto é, quando o cursor do mouse passar sobre a tag.
 */
 nav ul li a:hover {
     font-weight: bold; /* Formata o texto em negrito */
