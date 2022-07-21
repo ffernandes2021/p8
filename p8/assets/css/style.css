@@ -1,0 +1,51 @@
+/* Seleciona a tag body */
+body {
+    margin: 0; /* Remove o espaço externo/margem (4 lados) */
+    padding: 20px; /* Define o espaço interno (4 lados) com 20px */
+}
+
+/* Seleciona a tag div, que é filha da tag header */
+header div {
+    background-color: #FFFFD9; /* Define a cor de fundo */
+    padding: 30px; /* Define o espaço interno (4 lados) com 30px */
+}
+
+/* Seleciona a tag img, que é filha da tag div e neta de header */
+header div img {
+    /* Combinação de propriedades abaixo, centraliza a imagem */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seleciona a tag nav */
+nav {
+    background-color: #302A2D; /* Define a cor de fundo */
+    padding: 20px; /* Define o espaço interno (4 lados) com 20px */
+}
+
+/* Seleciona a tag ul, que é filha da tag nav */
+nav ul {
+    list-style-type: none; /* Remove os bullets de uma ul */
+    margin-bottom: 0; /* Remove a margem inferior */
+    margin-top: 0; /* Remove a margem superior */
+    padding-left: 0; /* Remove o espaço interno esquerdo */
+    text-align: center; /* Alinha o texto no centro */
+}
+
+/* Seleciona (todas) as li, filhas de ul e netas de nav */
+nav ul li {
+    display: inline; /* Coloca as li's lado-a-lado */
+    /* Define os espaços internos esquerdo e direito com 10px */
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+nav ul li a {
+    color: #FFF; /* Define a cor da fonte */
+    text-decoration: none; /* Remove o sublinhado da âncora */
+}
+
+nav ul li a:hover {
+    font-weight: bold; /* Formata o texto em negrito */
+}
