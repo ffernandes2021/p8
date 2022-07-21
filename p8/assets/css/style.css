@@ -4,15 +4,15 @@ body {
     padding: 20px; /* Define o espaço interno (4 lados) com 20px */
 }
 
-/* Seleciona a tag div, que é filha da tag header */
+/* Seleciona a tag div, que esta contida em uma tag header */
 header div {
     background-color: #FFFFD9; /* Define a cor de fundo */
     padding: 30px; /* Define o espaço interno (4 lados) com 30px */
 }
 
-/* Seleciona a tag img, que é filha da tag div e neta de header */
+/* Seleciona a tag img, que esta contida em uma tag div, que por sua vez está contida em uma tag header */
 header div img {
-    /* Combinação de propriedades abaixo, centraliza a imagem */
+    /* Combinação das propriedades abaixo, centraliza a imagem */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +24,7 @@ nav {
     padding: 20px; /* Define o espaço interno (4 lados) com 20px */
 }
 
-/* Seleciona a tag ul, que é filha da tag nav */
+/* Seleciona a tag ul, que esta contida em uma tag nav */
 nav ul {
     list-style-type: none; /* Remove os bullets de uma ul */
     margin-bottom: 0; /* Remove a margem inferior */
@@ -33,7 +33,7 @@ nav ul {
     text-align: center; /* Alinha o texto no centro */
 }
 
-/* Seleciona (todas) as li, filhas de ul e netas de nav */
+/* Seleciona (todas) as li's, que estão contidas em uma ul, que por sua vez está contida em uma nav */
 nav ul li {
     display: inline; /* Coloca as li's lado-a-lado */
     /* Define os espaços internos esquerdo e direito com 10px */
@@ -41,11 +41,15 @@ nav ul li {
     padding-right: 10px;
 }
 
+/* Seleciona (todas) as a's, que estão contidas em (todas) li's, que estão contidas em uma ul, que por sua vez está contida em uma nav */
 nav ul li a {
     color: #FFF; /* Define a cor da fonte */
     text-decoration: none; /* Remove o sublinhado da âncora */
 }
 
+/* Seleciona (todas) as a's, que estão contidas em (todas) li's, que estão contidas em uma ul, que por sua vez está contida em uma nav 
+A pseudo-classe :hover indica que a seleção se dará no movimento de hover, isto é, quando o cursor do mouse passar sobre a tag.
+*/
 nav ul li a:hover {
     font-weight: bold; /* Formata o texto em negrito */
 }
