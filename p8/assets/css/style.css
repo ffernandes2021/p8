@@ -53,3 +53,99 @@ A pseudo-classe :hover indica que a seleção se dará no hover, isto é, quando
 nav ul li a:hover {
     font-weight: bold; /* Formata o texto em negrito */
 }
+
+
+/* Seleciona a tag main */
+main {
+    margin-top: 20px; /* Define a margem superior em 20px */
+}
+
+/* Seleciona a tag h1 */
+h1 {
+    background-color: #302A2D; /* Define a cor de fundo */
+    color: #FFF; /* Define a cor da fonte */
+    font-weight: bold; /* Formata o texto em negrito */
+    /* Remove as margens inferior e superior */
+    margin-bottom: 0; 
+    margin-top: 0;
+    padding: 20px; /* Define o padding (4 lados) com 20px */
+}
+
+/* Seleciona (todas) as tags article */
+article {
+    background-color: #FFFFD9; /* Define a cor de fundo */
+    padding: 20px; /* Define o padding (4 lados) com 20px */
+}
+
+/* Seleciona (todas) as tags h2 */
+h2 {
+    color: #302A2D; /* Define a cor da fonte */
+    /* Remove as margens inferior e superior */
+    margin-bottom: 0; 
+    margin-top: 0;
+}
+
+/* Seleciona (todas) as tags div, contidas em tags article */
+article div {
+    padding-bottom: 34px; /* Define o padding inferior com 34px (altura do button) */
+}
+
+/* Seleciona (todas) as tags p */
+p {
+    color: #302A2D; /* Define a cor da fonte */
+    /* Define as margens inferior e superior com 20px */     
+    margin-bottom: 20px;
+    margin-top: 20px;    
+}
+
+/* Seleciona (todas) as tags button */
+button {
+    background-color: #DF1400; /* Define a cor de fundo */
+    border: 0; /* Remove a borda (4 lados) */
+    color: #FFF; /* Define a cor da fonte */
+    cursor: pointer; /* Define o cursor do mouse (indicado para links) */
+    float: right; /* "Flutua" o botão para a direita */
+    font-size: 12px; /* Define o tamanho da fonte */
+    padding: 10px; /* Define o padding (4 lados) com 10px */
+}
+
+/* Seleciona (todas) as tags button no hover */
+button:hover { 
+    background-color: #CC0000; /* Define a cor de fundo */
+    font-weight: bold; /* Formata o texto em negrito */
+}
+
+/* Seleciona a segunda tag section, que está contida na tag main */
+main section:nth-child(2) {
+    padding-top: 20px; /* Define o padding superior em 20px */
+}
+
+/* Seleciona (todas) as tags h2, (imediatamente) contidas em tags section */
+section > h2 {
+    background-color: #302A2D; /* Define a cor de fundo */
+    color: #FFF; /* Define a cor da fonte */
+    font-weight: bold; /* Formata o texto em negrito */
+    padding: 20px; /* Define o padding (4 lados) com 20px */
+}
+
+/* Seleciona (todas) as tags section, que estão contidas em tags section */
+section section {
+    background-color: #FFFFD9; /* Define a cor de fundo */
+    padding: 0 20px 20px 20px; /* Remove o padding superior e define os padding's direito, inferior e esquerdo com 20px */
+}
+
+/* Seleciona (todas) as tags h3 */
+h3 {
+    /* Remove as margens inferior e superior */     
+    margin-bottom: 0;
+    margin-top: 0; 
+}
+
+/* Seleciona (todas) as tags h3, que estão contidas em tags section, que por sua vez estão contidas em tags section */
+section section h3 {
+    background-color: #302A2D; /* Define a cor de fundo */
+    color: #FFF; /* Define a cor da fonte */
+    font-weight: bold; /* Formata o texto em negrito */
+    padding: 20px; /* Define o padding (4 lados) com 20px */
+    text-align: center; /* Alinha o texto no centro */
+}
