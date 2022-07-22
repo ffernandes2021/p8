@@ -208,3 +208,15 @@ aside section ul li:nth-child(7) {
     margin-bottom: 5px; /* Define a margem inferior com 5px */
 }
 
+/* Seleciona a tag footer */
+footer {
+    background-color: #302A2D; /* Define a cor de fundo */
+    color: #FFF; /* Define a cor da fonte */
+    margin-top: 20px; /* Define a margem superior com 20px */
+    padding: 20px; /* Define o padding (4 lados) com 20px */
+}
+
+/* Seleciona a primeira tag div, contida em uma tag div, que por sua vez contida está na tag footer */
+footer div div:first-child {
+    font-size: 12px; /* Define o tamanho da fonte */
+}
