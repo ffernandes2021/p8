@@ -41,19 +41,25 @@ nav ul li {
     padding-right: 10px;
 }
 
-/* Seleciona (todas) as tags a, que estão contidas em li's, que estão contidas em uma ul, que por sua vez está contida em uma nav */
+/* Seleciona (todas) as tags a, que estão contidas em tags li, 
+que por sua vez estão contidas em tags ul, que por sua vez 
+estão contidas em tags nav. */
 nav ul li a {
-    color: #FFF; /* Define a cor da fonte */
-    text-decoration: none; /* Remove o sublinhado da âncora */
+    color: #FFF; /* Define a cor da fonte */    
 }
 
-/* Seleciona (todas) as tags a, que estão contidas em li's, que estão contidas em uma ul, que por sua vez está contida em uma nav 
-A pseudo-classe :hover indica que a seleção se dará no hover, isto é, quando o cursor do mouse passar sobre a tag.
+/* Seleciona (todas) as tags a */
+a {
+    text-decoration: none; /* Remove o sublinhado (padrão) da âncora */
+}
+
+/* Seleciona (todas) as tags a
+A pseudo-classe :hover indica que a seleção se dará no hover, isto
+é, quando o cursor do mouse passar sobre a(s) tag(s).
 */
-nav ul li a:hover {
+a:hover {
     font-weight: bold; /* Formata o texto em negrito */
 }
-
 
 /* Seleciona a tag main */
 main {
@@ -149,3 +155,56 @@ section section h3 {
     padding: 20px; /* Define o padding (4 lados) com 20px */
     text-align: center; /* Alinha o texto no centro */
 }
+
+/* Seleciona (todas) as tags ul, contidas em tags section */
+section ul {
+    /* Remove as margens inferior e superior */     
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px 20px 0 40px; /* Remove o padding inferior e define os padding's superior, direito e esquerdo com 20px */
+}
+
+/* Seleciona a primeira, segunda e terceira tag li, que está contida em uma tag ul, que está contida em tag section */
+section ul li:first-child,
+section ul li:nth-child(2),
+section ul li:nth-child(3) {
+    margin-bottom: 5px; /* Define a margem inferior com 5px */
+}
+
+/* Seleciona (todas) as tags a, contidas em tags li, que por sua vez contidas em tag ul, que contidas estão em tags section */
+section ul li a {
+    color: #302A2D; /* Define a cor da fonte */
+}
+
+/* Seleciona a terceira tag section, que está (imediatamente) contida na tag main */
+main > section:nth-child(3) {
+    padding-top: 20px; /* Define o padding superior em 20px */
+}
+
+/* Seleciona a tag aside */
+aside {
+    padding-top: 20px; /* Define o padding superior em 20px */
+}
+
+/* Seleciona a tag section, que está contida na tag aside */
+aside section {
+    background-color: #FFFFD9; /* Define a cor de fundo */
+    padding: 20px; /* Define o padding (4 lados) com 20px */
+}
+
+/* Seleciona a tag h3, que está contida na tag section, que por sua vez, está contida na tag aside */
+aside section h2 {
+    background-color: #302A2D; /* Define a cor de fundo */
+    color: #FFF; /* Define a cor da fonte */
+    font-weight: bold; /* Formata o texto em negrito */
+    padding: 20px; /* Define o padding (4 lados) com 20px */
+}
+
+/* Seleciona a quarta, quinta, sexta e sétima tag li, que está contida em uma tag ul, que está contida em uma tag section, que por sua vez está em um tag aside */
+aside section ul li:nth-child(4),
+aside section ul li:nth-child(5),
+aside section ul li:nth-child(6),
+aside section ul li:nth-child(7) {
+    margin-bottom: 5px; /* Define a margem inferior com 5px */
+}
+
