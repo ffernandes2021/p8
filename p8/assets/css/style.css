@@ -1,222 +1,178 @@
-/* Seleciona a tag body */
 body {
-    margin: 0; /* Remove a margem (4 lados) */
-    padding: 20px; /* Define o padding (4 lados) com 20px */
+    margin: 0;
+    padding: 20px; 
 }
 
-/* Seleciona a tag div, que esta contida na tag header */
 header div {
-    background-color: #FFFFD9; /* Define a cor de fundo */
-    padding: 30px; /* Define o padding (4 lados) com 30px */
+    background-color: #FFFFD9; 
+    padding: 30px; 
 }
 
-/* Seleciona a tag img, que esta contida em uma tag div, que por sua vez está contida na tag header */
 header div img {
-    /* A combinação das propriedades abaixo, centraliza a imagem */
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Seleciona a tag nav */
 nav {
-    background-color: #302A2D; /* Define a cor de fundo */
-    padding: 20px; /* Define o padding (4 lados) com 20px */
+    background-color: #302A2D; 
+    padding: 20px; 
 }
 
-/* Seleciona a tag ul, que esta contida em uma tag nav */
 nav ul {
-    list-style-type: none; /* Remove estilo de lista default (bullets) de uma ul */
-    margin-bottom: 0; /* Remove a margem inferior */
-    margin-top: 0; /* Remove a margem superior */
-    padding-left: 0; /* Remove o espaço interno esquerdo */
-    text-align: center; /* Alinha o texto no centro */
+    list-style-type: none; 
+    margin-bottom: 0; 
+    margin-top: 0; 
+    padding-left: 0; 
+    text-align: center; 
 }
 
-/* Seleciona (todas) as tags li, que estão contidas em uma ul, que por sua vez está contida em uma nav */
 nav ul li {
-    display: inline; /* Coloca as li's lado-a-lado */
-    /* Define os padding's esquerdo e direito com 10px */
+    display: inline; 
     padding-left: 10px; 
     padding-right: 10px;
 }
 
-/* Seleciona (todas) as tags a, que estão contidas em tags li, 
-que por sua vez estão contidas em tags ul, que por sua vez 
-estão contidas em tags nav. */
 nav ul li a {
-    color: #FFF; /* Define a cor da fonte */    
+    color: #FFF;     
 }
 
-/* Seleciona (todas) as tags a */
 a {
-    text-decoration: none; /* Remove o sublinhado (padrão) da âncora */
+    text-decoration: none;
 }
 
-/* Seleciona (todas) as tags a
-A pseudo-classe :hover indica que a seleção se dará no hover, isto
-é, quando o cursor do mouse passar sobre a(s) tag(s).
-*/
 a:hover {
-    font-weight: bold; /* Formata o texto em negrito */
+    font-weight: bold;
 }
 
-/* Seleciona a tag main */
 main {
-    margin-top: 20px; /* Define a margem superior em 20px */
+    margin-top: 20px;
 }
 
-/* Seleciona a tag h1 */
 h1 {
-    background-color: #302A2D; /* Define a cor de fundo */
-    color: #FFF; /* Define a cor da fonte */
-    font-weight: bold; /* Formata o texto em negrito */
-    /* Remove as margens inferior e superior */
+    background-color: #302A2D;
+    color: #FFF;
+    font-weight: bold;
     margin-bottom: 0; 
     margin-top: 0;
-    padding: 20px; /* Define o padding (4 lados) com 20px */
+    padding: 20px;
 }
 
-/* Seleciona (todas) as tags article */
 article {
-    background-color: #FFFFD9; /* Define a cor de fundo */
-    padding: 20px; /* Define o padding (4 lados) com 20px */
+    background-color: #FFFFD9;
+    padding: 20px;
 }
 
-/* Seleciona (todas) as tags h2 */
 h2 {
-    color: #302A2D; /* Define a cor da fonte */
-    /* Remove as margens inferior e superior */
+    color: #302A2D;
     margin-bottom: 0; 
     margin-top: 0;
 }
 
-/* Seleciona (todas) as tags div, contidas em tags article */
 article div {
-    padding-bottom: 34px; /* Define o padding inferior com 34px (altura do button) */
+    padding-bottom: 34px;
 }
 
-/* Seleciona (todas) as tags p */
 p {
-    color: #302A2D; /* Define a cor da fonte */
-    /* Define as margens inferior e superior com 20px */     
+    color: #302A2D;
     margin-bottom: 20px;
     margin-top: 20px;    
 }
 
-/* Seleciona (todas) as tags button */
 button {
-    background-color: #DF1400; /* Define a cor de fundo */
-    border: 0; /* Remove a borda (4 lados) */
-    color: #FFF; /* Define a cor da fonte */
-    cursor: pointer; /* Define o cursor do mouse (indicado para links) */
-    float: right; /* "Flutua" o botão para a direita */
-    font-size: 12px; /* Define o tamanho da fonte */
-    padding: 10px; /* Define o padding (4 lados) com 10px */
+    background-color: #DF1400;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    float: right;
+    font-size: 12px;
+    padding: 10px;
 }
 
-/* Seleciona (todas) as tags button no hover */
 button:hover { 
-    background-color: #CC0000; /* Define a cor de fundo */
-    font-weight: bold; /* Formata o texto em negrito */
+    background-color: #CC0000;
+    font-weight: bold;
 }
 
-/* Seleciona a segunda tag section, que está contida na tag main */
 main section:nth-child(2) {
-    padding-top: 20px; /* Define o padding superior em 20px */
+    padding-top: 20px;
 }
 
-/* Seleciona (todas) as tags h2, (imediatamente) contidas em tags section */
 section > h2 {
-    background-color: #302A2D; /* Define a cor de fundo */
-    color: #FFF; /* Define a cor da fonte */
-    font-weight: bold; /* Formata o texto em negrito */
-    padding: 20px; /* Define o padding (4 lados) com 20px */
+    background-color: #302A2D;
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px;
 }
 
-/* Seleciona (todas) as tags section, que estão contidas em tags section */
 section section {
-    background-color: #FFFFD9; /* Define a cor de fundo */
-    padding: 0 20px 20px 20px; /* Remove o padding superior e define os padding's direito, inferior e esquerdo com 20px */
+    background-color: #FFFFD9;
+    padding: 0 20px 20px 20px;
 }
 
-/* Seleciona (todas) as tags h3 */
 h3 {
-    /* Remove as margens inferior e superior */     
     margin-bottom: 0;
     margin-top: 0; 
 }
 
-/* Seleciona (todas) as tags h3, que estão contidas em tags section, que por sua vez estão contidas em tags section */
 section section h3 {
-    background-color: #302A2D; /* Define a cor de fundo */
-    color: #FFF; /* Define a cor da fonte */
-    font-weight: bold; /* Formata o texto em negrito */
-    padding: 20px; /* Define o padding (4 lados) com 20px */
-    text-align: center; /* Alinha o texto no centro */
+    background-color: #302A2D;
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Seleciona (todas) as tags ul, contidas em tags section */
 section ul {
-    /* Remove as margens inferior e superior */     
     margin-bottom: 0;
     margin-top: 0;
-    padding: 20px 20px 0 40px; /* Remove o padding inferior e define os padding's superior, direito e esquerdo com 20px */
+    padding: 20px 20px 0 40px;
 }
 
-/* Seleciona a primeira, segunda e terceira tag li, que está contida em uma tag ul, que está contida em tag section */
 section ul li:first-child,
 section ul li:nth-child(2),
 section ul li:nth-child(3) {
-    margin-bottom: 5px; /* Define a margem inferior com 5px */
+    margin-bottom: 5px;
 }
 
-/* Seleciona (todas) as tags a, contidas em tags li, que por sua vez contidas em tag ul, que contidas estão em tags section */
 section ul li a {
-    color: #302A2D; /* Define a cor da fonte */
+    color: #302A2D;
 }
 
-/* Seleciona a terceira tag section, que está (imediatamente) contida na tag main */
 main > section:nth-child(3) {
-    padding-top: 20px; /* Define o padding superior em 20px */
+    padding-top: 20px;
 }
 
-/* Seleciona a tag aside */
 aside {
-    padding-top: 20px; /* Define o padding superior em 20px */
+    padding-top: 20px;
 }
 
-/* Seleciona a tag section, que está contida na tag aside */
 aside section {
-    background-color: #FFFFD9; /* Define a cor de fundo */
-    padding: 20px; /* Define o padding (4 lados) com 20px */
+    background-color: #FFFFD9;
+    padding: 20px;
 }
 
-/* Seleciona a tag h3, que está contida na tag section, que por sua vez, está contida na tag aside */
 aside section h2 {
-    background-color: #302A2D; /* Define a cor de fundo */
-    color: #FFF; /* Define a cor da fonte */
-    font-weight: bold; /* Formata o texto em negrito */
-    padding: 20px; /* Define o padding (4 lados) com 20px */
+    background-color: #302A2D;
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px;
 }
 
-/* Seleciona a quarta, quinta, sexta e sétima tag li, que está contida em uma tag ul, que está contida em uma tag section, que por sua vez está em um tag aside */
 aside section ul li:nth-child(4),
 aside section ul li:nth-child(5),
 aside section ul li:nth-child(6),
 aside section ul li:nth-child(7) {
-    margin-bottom: 5px; /* Define a margem inferior com 5px */
+    margin-bottom: 5px;
 }
 
-/* Seleciona a tag footer */
 footer {
-    background-color: #302A2D; /* Define a cor de fundo */
-    color: #FFF; /* Define a cor da fonte */
-    margin-top: 20px; /* Define a margem superior com 20px */
-    padding: 20px; /* Define o padding (4 lados) com 20px */
+    background-color: #302A2D;
+    color: #FFF;
+    margin-top: 20px;
+    padding: 20px;
 }
 
-/* Seleciona a primeira tag div, contida em uma tag div, que por sua vez contida está na tag footer */
 footer div div:first-child {
-    font-size: 12px; /* Define o tamanho da fonte */
+    font-size: 12px;
 }
