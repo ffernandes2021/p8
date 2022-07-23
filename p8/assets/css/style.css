@@ -173,6 +173,14 @@ footer {
     padding: 20px;
 }
 
-footer div div:first-child {
+footer div:first-child {
     font-size: 12px;
+}
+
+footer div:nth-child(2) {
+    text-align: right;
+}
+
+footer div:nth-child(2) a img {
+    vertical-align: 1px;
 }
